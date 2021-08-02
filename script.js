@@ -2,6 +2,7 @@ const colorPreview = document.getElementById("colorPreview");
 const colorInput = document.getElementById("colorInput");
 const colorOutput = document.getElementById("colorOutput");
 const slider = document.getElementById("slider");
+const sliderValue = document.getElementById("sliderValue");
 
 var color = "000000";
 var colorAfter = "000000";
@@ -11,6 +12,7 @@ var alphaHex = "00";
 
 slider.addEventListener('input', function() {
     alphaHex = alphaHexs[slider.value];
+    sliderValue.innerHTML = `${slider.value}%`;
 
     UpdateColor();
 }, false) ;
