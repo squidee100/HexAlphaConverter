@@ -15,12 +15,12 @@ slider.addEventListener('input', function() {
     sliderValue.innerHTML = `${slider.value}%`;
 
     UpdateColor();
-}, false) ;
+}, false);
 
 colorInput.addEventListener('input', function() {
     color = colorInput.value.toString();
     UpdateColor();
-}, false) ;
+}, false);
 
 function UpdateColor() {
     colorAfter = `${color}${alphaHex}`;
